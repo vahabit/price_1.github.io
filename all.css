@@ -8323,6 +8323,15 @@ h3.page-product-heading {
 .tb2 {
 	font-size: x-small;
 }
+.img_1 img {
+	display: block;
+	float: none;
+}
+.grund img {
+	display: block;
+	float: none;
+	margin: 0 0 10px 0;
+}
 }
 @media screen and (max-width: 1024px) {
 .tb1 {
