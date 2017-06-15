@@ -8216,11 +8216,12 @@ h3.page-product-heading {
 }
 .pricecust_1 .pr_1 {
 	display: inline-block;
+	vertical-align: top;
     max-width: 47%;
 }
 .pricecust_1 .pr_2 {
-	position: absolute;
     display: inline-block;
+	vertical-align: top;
     max-width: 25%;
     margin-left: 55px;
 }
@@ -8233,13 +8234,25 @@ h3.page-product-heading {
 	float: left;
 	margin-right: 10px;
 }
+.grundun{
+	width: 100%;
+	margin-bottom: 20px;
+}
 .grund img {
 	float: left;
 	margin-right: 10px;
 }
+.grund:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+}
 .cont {
 	display: block;
-	margin-top: 65px;
 }
 .cont ul {
 	list-style-position: inside;
@@ -8252,7 +8265,7 @@ h3.page-product-heading {
 .grey {
 	color: rgba(128, 128, 128, 0.8);
 }
-@media screen and (max-width: 1200px) and (min-width: 1024px){ 
+@media screen and (max-width: 1200px) /* and (min-width: 1024px) */{ 
 .pricecust ul {
 	list-style-position: inside;
 	-moz-column-count: 3; /* Firefox */
@@ -8262,7 +8275,7 @@ h3.page-product-heading {
 	max-width: 80%;
 }
 }
-@media screen and (max-width: 1023px) and (min-width: 800px){ 
+@media screen and (max-width: 1023px) /* and (min-width: 800px) */{ 
 .pricecust ul {
 	list-style-position: inside;
 	-moz-column-count: 3; /* Firefox */
@@ -8271,8 +8284,21 @@ h3.page-product-heading {
 	list-style-type: decimal;
 	max-width: 100%;
 }
+.cont ul {
+	list-style-position: inside;
+	-moz-column-count: 2; /* Firefox */
+	-webkit-column-count: 2; /* Safari and Chrome */
+	column-count: 2;
+	list-style-type: decimal;
+	max-width: 100%;
 }
-@media screen and (max-width: 799px) and (min-width: 580px){ 
+.pricecust_1 .pr_1, .pricecust_1 .pr_2 {
+	display: block;
+    max-width: 80%;
+	margin: 0;
+}
+}
+@media screen and (max-width: 799px) /* and (min-width: 580px) */{ 
 .pricecust ul {
 	list-style-position: inside;
 	-moz-column-count: 2; /* Firefox */
@@ -8283,7 +8309,7 @@ h3.page-product-heading {
 }
 }
 @media screen and (max-width: 579px){ 
-.pricecust ul {
+.pricecust ul, .cont ul {
 	list-style-position: inside;
 	-moz-column-count: 1; /* Firefox */
 	-webkit-column-count: 1; /* Safari and Chrome */
