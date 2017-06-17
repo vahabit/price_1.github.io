@@ -8275,7 +8275,10 @@ h3.page-product-heading {
 	max-width: 80%;
 }
 }
-@media screen and (max-width: 1023px) /* and (min-width: 800px) */{ 
+@media screen and (max-width: 1024px) /* and (min-width: 800px) */{ 
+.tb1 td, .tb2 td {
+	text-align: center;
+}
 .pricecust ul {
 	list-style-position: inside;
 	-moz-column-count: 3; /* Firefox */
@@ -8283,6 +8286,16 @@ h3.page-product-heading {
 	column-count: 3;
 	list-style-type: decimal;
 	max-width: 100%;
+}
+.tb1 {
+	display: none;
+}
+.tb2 {
+	display: table;
+	max-width: 100%;
+}
+.tb2 td{
+	padding: 9px 12px;
 }
 .cont ul {
 	list-style-position: inside;
@@ -8294,11 +8307,11 @@ h3.page-product-heading {
 }
 .pricecust_1 .pr_1, .pricecust_1 .pr_2 {
 	display: block;
-    max-width: 80%;
+    max-width: 100%;
 	margin: 0;
 }
 }
-@media screen and (max-width: 799px) /* and (min-width: 580px) */{ 
+@media screen and (max-width: 800px) /* and (min-width: 580px) */{ 
 .pricecust ul {
 	list-style-position: inside;
 	-moz-column-count: 2; /* Firefox */
@@ -8308,7 +8321,7 @@ h3.page-product-heading {
 	max-width: 100%;
 }
 }
-@media screen and (max-width: 579px){ 
+@media screen and (max-width: 580px){ 
 .pricecust ul, .cont ul {
 	list-style-position: inside;
 	-moz-column-count: 1; /* Firefox */
@@ -8331,15 +8344,6 @@ h3.page-product-heading {
 	display: block;
 	float: none;
 	margin: 0 0 10px 0;
-}
-}
-@media screen and (max-width: 1024px) {
-.tb1 {
-	display: none;
-}
-.tb2 {
-	display: table;
-	max-width: 100%;
 }
 }
 /*Price*/
