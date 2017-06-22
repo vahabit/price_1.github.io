@@ -8276,7 +8276,10 @@ h3.page-product-heading {
 }
 }
 @media screen and (max-width: 1024px) /* and (min-width: 800px) */{ 
-.tb1 td, .tb2 td {
+.tb{
+	width: 100%;
+}
+.tb2 td {
 	text-align: center;
 }
 .pricecust ul {
@@ -8292,7 +8295,7 @@ h3.page-product-heading {
 }
 .tb2 {
 	display: table;
-	max-width: 100%;
+	width: 100%;
 }
 .tb2 td{
 	padding: 9px 12px;
@@ -8330,8 +8333,8 @@ h3.page-product-heading {
 	list-style-type: decimal;
 	max-width: 100%;
 }
-.tb2 td, .tb2 td {
-	padding: 9px 5px;
+.tb2 td {
+	padding: 9px 8px;
 }
 .tb2 {
 	font-size: x-small;
